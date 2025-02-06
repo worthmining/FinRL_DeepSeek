@@ -1,3 +1,5 @@
+# FinRL-DeepSeek: LLM-Infused Risk-Sensitive Reinforcement Learning for Trading Agents
+[![](https://dcbadge.vercel.app/api/server/trsr8SXpW5)](https://discord.gg/trsr8SXpW5)
 Paper: 
 
 Installation script: `installation_script.sh`
