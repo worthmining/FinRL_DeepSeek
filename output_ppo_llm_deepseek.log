@@ -1,0 +1,547 @@
+nohup: ignoring input
+/root/FinRL_LLM/train_ppo_llm.py:135: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  train['llm_sentiment'].fillna(0, inplace=True)
+Stock Dimension: 82, State Space: 903
+Observation space: Box(-inf, inf, (903,), float32)
+Observation space shape: (903,)
+Observation returned from reset: (1, 903)
+Warning: Log dir /root/spinningup_pytorch/data/ppo/ppo_s42 already exists! Storing info there anyway.
+[32;1mLogging data to /root/spinningup_pytorch/data/ppo/ppo_s42/progress.txt[0m
+[36;1mSaving config:
+[0m
+{
+    "ac_kwargs":	{
+        "hidden_sizes":	[
+            512,
+            512
+        ]
+    },
+    "actor_critic":	"MLPActorCritic",
+    "clip_ratio":	0.7,
+    "env_fn":	"<function <lambda> at 0x7a29089676d0>",
+    "epochs":	20,
+    "exp_name":	"ppo",
+    "gamma":	0.995,
+    "lam":	0.95,
+    "logger":	{
+        "<spinup.utils.logx.EpochLogger object at 0x7a2907f02740>":	{
+            "epoch_dict":	{},
+            "exp_name":	"ppo",
+            "first_row":	true,
+            "log_current_row":	{},
+            "log_headers":	[],
+            "output_dir":	"/root/spinningup_pytorch/data/ppo/ppo_s42",
+            "output_file":	{
+                "<_io.TextIOWrapper name='/root/spinningup_pytorch/data/ppo/ppo_s42/progress.txt' mode='w' encoding='UTF-8'>":	{
+                    "mode":	"w"
+                }
+            }
+        }
+    },
+    "logger_kwargs":	{
+        "exp_name":	"ppo",
+        "output_dir":	"/root/spinningup_pytorch/data/ppo/ppo_s42"
+    },
+    "max_ep_len":	1000,
+    "pi_lr":	3e-05,
+    "save_freq":	5,
+    "seed":	42,
+    "steps_per_epoch":	20000,
+    "target_kl":	0.35,
+    "train_pi_iters":	100,
+    "train_v_iters":	100,
+    "vf_lr":	0.0001
+}
+obs dim (903,)
+act dim (82,)
+/root/FinRL_LLM/train_ppo_llm.py:135: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  train['llm_sentiment'].fillna(0, inplace=True)
+Stock Dimension: 82, State Space: 903
+Observation space: Box(-inf, inf, (903,), float32)
+Observation space shape: (903,)
+Observation returned from reset: (1, 903)
+obs dim (903,)
+act dim (82,)
+/root/FinRL_LLM/train_ppo_llm.py:135: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  train['llm_sentiment'].fillna(0, inplace=True)
+Stock Dimension: 82, State Space: 903
+Observation space: Box(-inf, inf, (903,), float32)
+Observation space shape: (903,)
+Observation returned from reset: (1, 903)
+obs dim (903,)
+act dim (82,)
+/root/FinRL_LLM/train_ppo_llm.py:135: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  train['llm_sentiment'].fillna(0, inplace=True)
+Stock Dimension: 82, State Space: 903
+Observation space: Box(-inf, inf, (903,), float32)
+Observation space shape: (903,)
+Observation returned from reset: (1, 903)
+obs dim (903,)
+act dim (82,)
+[32;1m
+Number of parameters: 	 pi: 767652, 	 v: 726017
+[0m
+---------------------------------------
+|             Epoch |               0 |
+|      AverageEpRet |             123 |
+|          StdEpRet |            25.3 |
+|          MaxEpRet |             173 |
+|          MinEpRet |            81.7 |
+|             EpLen |           1e+03 |
+|      AverageVVals |           0.096 |
+|          StdVVals |           0.209 |
+|          MaxVVals |           0.666 |
+|          MinVVals |          -0.626 |
+| TotalEnvInteracts |           2e+04 |
+|            LossPi |          0.0522 |
+|             LossV |             455 |
+|       DeltaLossPi |          -0.474 |
+|        DeltaLossV |            -336 |
+|           Entropy |           0.919 |
+|                KL |           0.125 |
+|          ClipFrac |           0.515 |
+|          StopIter |              99 |
+|              Time |             235 |
+---------------------------------------
+---------------------------------------
+|             Epoch |               1 |
+|      AverageEpRet |             123 |
+|          StdEpRet |            25.7 |
+|          MaxEpRet |             167 |
+|          MinEpRet |              79 |
+|             EpLen |           1e+03 |
+|      AverageVVals |            14.9 |
+|          StdVVals |           0.704 |
+|          MaxVVals |            15.4 |
+|          MinVVals |            11.2 |
+| TotalEnvInteracts |           4e+04 |
+|            LossPi |          0.0497 |
+|             LossV |             131 |
+|       DeltaLossPi |          -0.486 |
+|        DeltaLossV |           -41.9 |
+|           Entropy |           0.918 |
+|                KL |           0.161 |
+|          ClipFrac |           0.535 |
+|          StopIter |              99 |
+|              Time |             494 |
+---------------------------------------
+---------------------------------------
+|             Epoch |               2 |
+|      AverageEpRet |             121 |
+|          StdEpRet |            26.6 |
+|          MaxEpRet |             187 |
+|          MinEpRet |            80.6 |
+|             EpLen |           1e+03 |
+|      AverageVVals |            19.4 |
+|          StdVVals |            0.22 |
+|          MaxVVals |            19.6 |
+|          MinVVals |            18.5 |
+| TotalEnvInteracts |           6e+04 |
+|            LossPi |          0.0465 |
+|             LossV |            91.4 |
+|       DeltaLossPi |          -0.485 |
+|        DeltaLossV |             -24 |
+|           Entropy |           0.917 |
+|                KL |            0.17 |
+|          ClipFrac |           0.548 |
+|          StopIter |              99 |
+|              Time |             733 |
+---------------------------------------
+---------------------------------------
+|             Epoch |               3 |
+|      AverageEpRet |             122 |
+|          StdEpRet |              19 |
+|          MaxEpRet |             172 |
+|          MinEpRet |            87.6 |
+|             EpLen |           1e+03 |
+|      AverageVVals |            20.6 |
+|          StdVVals |            1.77 |
+|          MaxVVals |              22 |
+|          MinVVals |            14.5 |
+| TotalEnvInteracts |           8e+04 |
+|            LossPi |          0.0475 |
+|             LossV |            86.1 |
+|       DeltaLossPi |          -0.498 |
+|        DeltaLossV |           -29.4 |
+|           Entropy |           0.916 |
+|                KL |           0.179 |
+|          ClipFrac |           0.573 |
+|          StopIter |              99 |
+|              Time |             964 |
+---------------------------------------
+---------------------------------------
+|             Epoch |               4 |
+|      AverageEpRet |             114 |
+|          StdEpRet |            28.3 |
+|          MaxEpRet |             171 |
+|          MinEpRet |            72.3 |
+|             EpLen |           1e+03 |
+|      AverageVVals |            19.8 |
+|          StdVVals |            4.42 |
+|          MaxVVals |            24.5 |
+|          MinVVals |            8.85 |
+| TotalEnvInteracts |           1e+05 |
+|            LossPi |          0.0435 |
+|             LossV |            75.6 |
+|       DeltaLossPi |          -0.484 |
+|        DeltaLossV |           -30.5 |
+|           Entropy |           0.915 |
+|                KL |           0.168 |
+|          ClipFrac |           0.574 |
+|          StopIter |              99 |
+|              Time |        1.19e+03 |
+---------------------------------------
+---------------------------------------
+|             Epoch |               5 |
+|      AverageEpRet |             115 |
+|          StdEpRet |            23.2 |
+|          MaxEpRet |             166 |
+|          MinEpRet |            69.8 |
+|             EpLen |           1e+03 |
+|      AverageVVals |              21 |
+|          StdVVals |            5.35 |
+|          MaxVVals |            26.9 |
+|          MinVVals |            5.13 |
+| TotalEnvInteracts |         1.2e+05 |
+|            LossPi |          0.0541 |
+|             LossV |            84.3 |
+|       DeltaLossPi |          -0.494 |
+|        DeltaLossV |           -53.6 |
+|           Entropy |           0.914 |
+|                KL |           0.195 |
+|          ClipFrac |           0.594 |
+|          StopIter |              99 |
+|              Time |        1.49e+03 |
+---------------------------------------
+---------------------------------------
+|             Epoch |               6 |
+|      AverageEpRet |             120 |
+|          StdEpRet |            22.7 |
+|          MaxEpRet |             163 |
+|          MinEpRet |            75.5 |
+|             EpLen |           1e+03 |
+|      AverageVVals |            20.8 |
+|          StdVVals |            7.33 |
+|          MaxVVals |            29.4 |
+|          MinVVals |            1.07 |
+| TotalEnvInteracts |         1.4e+05 |
+|            LossPi |          0.0474 |
+|             LossV |            71.2 |
+|       DeltaLossPi |          -0.485 |
+|        DeltaLossV |           -44.2 |
+|           Entropy |           0.912 |
+|                KL |           0.175 |
+|          ClipFrac |           0.575 |
+|          StopIter |              99 |
+|              Time |        1.72e+03 |
+---------------------------------------
+---------------------------------------
+|             Epoch |               7 |
+|      AverageEpRet |             151 |
+|          StdEpRet |              28 |
+|          MaxEpRet |             204 |
+|          MinEpRet |             103 |
+|             EpLen |           1e+03 |
+|      AverageVVals |            24.8 |
+|          StdVVals |            7.54 |
+|          MaxVVals |            32.1 |
+|          MinVVals |           -1.96 |
+| TotalEnvInteracts |         1.6e+05 |
+|            LossPi |           0.041 |
+|             LossV |            95.3 |
+|       DeltaLossPi |          -0.487 |
+|        DeltaLossV |           -56.9 |
+|           Entropy |           0.911 |
+|                KL |           0.241 |
+|          ClipFrac |           0.624 |
+|          StopIter |              99 |
+|              Time |        1.94e+03 |
+---------------------------------------
+---------------------------------------
+|             Epoch |               8 |
+|      AverageEpRet |             146 |
+|          StdEpRet |            30.6 |
+|          MaxEpRet |             197 |
+|          MinEpRet |            93.2 |
+|             EpLen |           1e+03 |
+|      AverageVVals |              27 |
+|          StdVVals |            7.78 |
+|          MaxVVals |            36.1 |
+|          MinVVals |           0.674 |
+| TotalEnvInteracts |         1.8e+05 |
+|            LossPi |          0.0453 |
+|             LossV |            77.6 |
+|       DeltaLossPi |          -0.517 |
+|        DeltaLossV |             -55 |
+|           Entropy |            0.91 |
+|                KL |           0.246 |
+|          ClipFrac |           0.648 |
+|          StopIter |              99 |
+|              Time |        2.18e+03 |
+---------------------------------------
+---------------------------------------
+|             Epoch |               9 |
+|      AverageEpRet |             141 |
+|          StdEpRet |            33.3 |
+|          MaxEpRet |             208 |
+|          MinEpRet |            75.9 |
+|             EpLen |           1e+03 |
+|      AverageVVals |            28.5 |
+|          StdVVals |               8 |
+|          MaxVVals |            38.5 |
+|          MinVVals |           -1.57 |
+| TotalEnvInteracts |           2e+05 |
+|            LossPi |          0.0502 |
+|             LossV |            84.7 |
+|       DeltaLossPi |          -0.532 |
+|        DeltaLossV |           -67.6 |
+|           Entropy |           0.909 |
+|                KL |           0.258 |
+|          ClipFrac |           0.677 |
+|          StopIter |              99 |
+|              Time |         2.4e+03 |
+---------------------------------------
+---------------------------------------
+|             Epoch |              10 |
+|      AverageEpRet |             144 |
+|          StdEpRet |              26 |
+|          MaxEpRet |             188 |
+|          MinEpRet |             107 |
+|             EpLen |           1e+03 |
+|      AverageVVals |            26.5 |
+|          StdVVals |            10.7 |
+|          MaxVVals |            40.3 |
+|          MinVVals |           -4.56 |
+| TotalEnvInteracts |         2.2e+05 |
+|            LossPi |          0.0514 |
+|             LossV |            81.3 |
+|       DeltaLossPi |          -0.531 |
+|        DeltaLossV |             -64 |
+|           Entropy |           0.908 |
+|                KL |            0.23 |
+|          ClipFrac |           0.661 |
+|          StopIter |              99 |
+|              Time |        2.79e+03 |
+---------------------------------------
+---------------------------------------
+|             Epoch |              11 |
+|      AverageEpRet |             152 |
+|          StdEpRet |            18.6 |
+|          MaxEpRet |             189 |
+|          MinEpRet |             123 |
+|             EpLen |           1e+03 |
+|      AverageVVals |            26.1 |
+|          StdVVals |            12.8 |
+|          MaxVVals |            42.4 |
+|          MinVVals |           -9.17 |
+| TotalEnvInteracts |         2.4e+05 |
+|            LossPi |          0.0489 |
+|             LossV |            68.7 |
+|       DeltaLossPi |          -0.535 |
+|        DeltaLossV |           -57.3 |
+|           Entropy |           0.907 |
+|                KL |           0.275 |
+|          ClipFrac |           0.667 |
+|          StopIter |              99 |
+|              Time |        3.02e+03 |
+---------------------------------------
+---------------------------------------
+|             Epoch |              12 |
+|      AverageEpRet |             161 |
+|          StdEpRet |            26.4 |
+|          MaxEpRet |             212 |
+|          MinEpRet |             115 |
+|             EpLen |           1e+03 |
+|      AverageVVals |            27.1 |
+|          StdVVals |            11.5 |
+|          MaxVVals |            43.7 |
+|          MinVVals |           -13.6 |
+| TotalEnvInteracts |         2.6e+05 |
+|            LossPi |           0.048 |
+|             LossV |            93.8 |
+|       DeltaLossPi |          -0.538 |
+|        DeltaLossV |           -79.5 |
+|           Entropy |           0.905 |
+|                KL |           0.344 |
+|          ClipFrac |           0.696 |
+|          StopIter |              99 |
+|              Time |        3.25e+03 |
+---------------------------------------
+---------------------------------------
+|             Epoch |              13 |
+|      AverageEpRet |             152 |
+|          StdEpRet |            28.6 |
+|          MaxEpRet |             210 |
+|          MinEpRet |             116 |
+|             EpLen |           1e+03 |
+|      AverageVVals |            28.3 |
+|          StdVVals |              13 |
+|          MaxVVals |            45.9 |
+|          MinVVals |           -9.01 |
+| TotalEnvInteracts |         2.8e+05 |
+|            LossPi |          0.0463 |
+|             LossV |             102 |
+|       DeltaLossPi |          -0.529 |
+|        DeltaLossV |           -88.1 |
+|           Entropy |           0.904 |
+|                KL |           0.256 |
+|          ClipFrac |           0.677 |
+|          StopIter |              99 |
+|              Time |        3.48e+03 |
+---------------------------------------
+---------------------------------------
+|             Epoch |              14 |
+|      AverageEpRet |             162 |
+|          StdEpRet |            21.5 |
+|          MaxEpRet |             202 |
+|          MinEpRet |             135 |
+|             EpLen |           1e+03 |
+|      AverageVVals |            28.1 |
+|          StdVVals |            13.1 |
+|          MaxVVals |            47.4 |
+|          MinVVals |             -19 |
+| TotalEnvInteracts |           3e+05 |
+|            LossPi |          0.0458 |
+|             LossV |            83.8 |
+|       DeltaLossPi |          -0.535 |
+|        DeltaLossV |             -72 |
+|           Entropy |           0.903 |
+|                KL |           0.307 |
+|          ClipFrac |           0.682 |
+|          StopIter |              99 |
+|              Time |        3.71e+03 |
+---------------------------------------
+---------------------------------------
+|             Epoch |              15 |
+|      AverageEpRet |             161 |
+|          StdEpRet |            24.7 |
+|          MaxEpRet |             199 |
+|          MinEpRet |             102 |
+|             EpLen |           1e+03 |
+|      AverageVVals |            33.1 |
+|          StdVVals |            10.7 |
+|          MaxVVals |            48.9 |
+|          MinVVals |           -8.64 |
+| TotalEnvInteracts |         3.2e+05 |
+|            LossPi |          0.0457 |
+|             LossV |            73.3 |
+|       DeltaLossPi |          -0.526 |
+|        DeltaLossV |           -65.8 |
+|           Entropy |           0.902 |
+|                KL |           0.284 |
+|          ClipFrac |           0.678 |
+|          StopIter |              99 |
+|              Time |         4.2e+03 |
+---------------------------------------
+---------------------------------------
+|             Epoch |              16 |
+|      AverageEpRet |             168 |
+|          StdEpRet |            28.2 |
+|          MaxEpRet |             212 |
+|          MinEpRet |             104 |
+|             EpLen |           1e+03 |
+|      AverageVVals |            30.7 |
+|          StdVVals |              13 |
+|          MaxVVals |            49.5 |
+|          MinVVals |           -15.6 |
+| TotalEnvInteracts |         3.4e+05 |
+|            LossPi |           0.046 |
+|             LossV |            98.2 |
+|       DeltaLossPi |          -0.541 |
+|        DeltaLossV |           -88.7 |
+|           Entropy |           0.901 |
+|                KL |             0.3 |
+|          ClipFrac |           0.692 |
+|          StopIter |              99 |
+|              Time |        4.43e+03 |
+---------------------------------------
+---------------------------------------
+|             Epoch |              17 |
+|      AverageEpRet |             172 |
+|          StdEpRet |            29.4 |
+|          MaxEpRet |             216 |
+|          MinEpRet |            88.9 |
+|             EpLen |           1e+03 |
+|      AverageVVals |            34.2 |
+|          StdVVals |            11.6 |
+|          MaxVVals |              51 |
+|          MinVVals |           -5.98 |
+| TotalEnvInteracts |         3.6e+05 |
+|            LossPi |          0.0514 |
+|             LossV |            96.3 |
+|       DeltaLossPi |          -0.529 |
+|        DeltaLossV |           -85.2 |
+|           Entropy |             0.9 |
+|                KL |           0.267 |
+|          ClipFrac |           0.696 |
+|          StopIter |              99 |
+|              Time |        4.66e+03 |
+---------------------------------------
+---------------------------------------
+|             Epoch |              18 |
+|      AverageEpRet |             169 |
+|          StdEpRet |            24.9 |
+|          MaxEpRet |             220 |
+|          MinEpRet |             111 |
+|             EpLen |           1e+03 |
+|      AverageVVals |            32.4 |
+|          StdVVals |            13.4 |
+|          MaxVVals |            52.6 |
+|          MinVVals |             -17 |
+| TotalEnvInteracts |         3.8e+05 |
+|            LossPi |          0.0442 |
+|             LossV |            67.7 |
+|       DeltaLossPi |          -0.542 |
+|        DeltaLossV |           -60.8 |
+|           Entropy |           0.899 |
+|                KL |           0.295 |
+|          ClipFrac |           0.706 |
+|          StopIter |              99 |
+|              Time |        4.92e+03 |
+---------------------------------------
+---------------------------------------
+|             Epoch |              19 |
+|      AverageEpRet |             176 |
+|          StdEpRet |            28.6 |
+|          MaxEpRet |             229 |
+|          MinEpRet |             125 |
+|             EpLen |           1e+03 |
+|      AverageVVals |            32.7 |
+|          StdVVals |            12.8 |
+|          MaxVVals |            53.1 |
+|          MinVVals |           -7.73 |
+| TotalEnvInteracts |           4e+05 |
+|            LossPi |          0.0482 |
+|             LossV |            52.7 |
+|       DeltaLossPi |          -0.547 |
+|        DeltaLossV |           -42.4 |
+|           Entropy |           0.898 |
+|                KL |           0.302 |
+|          ClipFrac |            0.69 |
+|          StopIter |              99 |
+|              Time |        5.45e+03 |
+---------------------------------------
+Training finished and saved in trained_models/agent_ppo_deepseek_20_epochs_20k_steps.pth
+Training finished and saved in trained_models/agent_ppo_deepseek_20_epochs_20k_steps.pth
+Training finished and saved in trained_models/agent_ppo_deepseek_20_epochs_20k_steps.pth
+Training finished and saved in trained_models/agent_ppo_deepseek_20_epochs_20k_steps.pth

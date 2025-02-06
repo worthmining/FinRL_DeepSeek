@@ -1,0 +1,1318 @@
+nohup: ignoring input
+Generating train split: 0 examples [00:00, ? examples/s]Generating train split: 30000 examples [00:00, 216991.28 examples/s]Generating train split: 70000 examples [00:00, 251285.01 examples/s]Generating train split: 110000 examples [00:00, 255847.26 examples/s]Generating train split: 126756 examples [00:00, 251662.29 examples/s]
+/root/FinRL_LLM/train_cppo_llm_risk.py:60: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  train['llm_sentiment'].fillna(0, inplace=True) #0 is outside scope of sentiment scores (min is 1)
+/root/FinRL_LLM/train_cppo_llm_risk.py:62: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  train['llm_risk'].fillna(3, inplace=True) #neutral risk score is 3
+Stock Dimension: 84, State Space: 1009
+/root/FinRL_LLM/train_cppo_llm_risk.py:60: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  train['llm_sentiment'].fillna(0, inplace=True) #0 is outside scope of sentiment scores (min is 1)
+/root/FinRL_LLM/train_cppo_llm_risk.py:62: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  train['llm_risk'].fillna(3, inplace=True) #neutral risk score is 3
+Stock Dimension: 84, State Space: 1009
+Warning: Log dir /root/spinningup_pytorch/data/cppo/cppo_s0 already exists! Storing info there anyway.
+[32;1mLogging data to /root/spinningup_pytorch/data/cppo/cppo_s0/progress.txt[0m
+[36;1mSaving config:
+[0m
+{
+    "ac_kwargs":	{
+        "hidden_sizes":	[
+            512,
+            512
+        ]
+    },
+    "actor_critic":	"MLPActorCritic",
+    "alpha":	0.85,
+    "beta":	3000.0,
+    "clip_ratio":	0.7,
+    "cvar_clip_ratio":	0.05,
+    "delay":	1.0,
+    "env_fn":	"<function <lambda> at 0x7e2b9a366830>",
+    "epochs":	20,
+    "exp_name":	"cppo",
+    "gamma":	0.995,
+    "lam":	0.95,
+    "lam_low_bound":	0.001,
+    "lam_lr":	0.0005,
+    "lam_start":	0.01,
+    "logger":	{
+        "<spinup.utils.logx.EpochLogger object at 0x7e2b9a37dd80>":	{
+            "epoch_dict":	{},
+            "exp_name":	"cppo",
+            "first_row":	true,
+            "log_current_row":	{},
+            "log_headers":	[],
+            "output_dir":	"/root/spinningup_pytorch/data/cppo/cppo_s0",
+            "output_file":	{
+                "<_io.TextIOWrapper name='/root/spinningup_pytorch/data/cppo/cppo_s0/progress.txt' mode='w' encoding='UTF-8'>":	{
+                    "mode":	"w"
+                }
+            }
+        }
+    },
+    "logger_kwargs":	{
+        "exp_name":	"cppo",
+        "output_dir":	"/root/spinningup_pytorch/data/cppo/cppo_s0"
+    },
+    "max_ep_len":	3000,
+    "nu_delay":	0.75,
+    "nu_lr":	0.0005,
+    "nu_start":	0.1,
+    "pi_lr":	3e-05,
+    "save_freq":	10,
+    "seed":	0,
+    "steps_per_epoch":	20000,
+    "target_kl":	0.35,
+    "train_pi_iters":	100,
+    "train_v_iters":	100,
+    "vf_lr":	0.0001
+}
+/root/FinRL_LLM/train_cppo_llm_risk.py:60: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  train['llm_sentiment'].fillna(0, inplace=True) #0 is outside scope of sentiment scores (min is 1)
+/root/FinRL_LLM/train_cppo_llm_risk.py:62: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  train['llm_risk'].fillna(3, inplace=True) #neutral risk score is 3
+Stock Dimension: 84, State Space: 1009
+/root/FinRL_LLM/train_cppo_llm_risk.py:60: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  train['llm_sentiment'].fillna(0, inplace=True) #0 is outside scope of sentiment scores (min is 1)
+/root/FinRL_LLM/train_cppo_llm_risk.py:62: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  train['llm_risk'].fillna(3, inplace=True) #neutral risk score is 3
+Stock Dimension: 84, State Space: 1009
+[32;1m
+Number of parameters: 	 pi: 822952, 	 v: 780289
+[0m
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+---------------------------------------
+|             Epoch |               0 |
+|      AverageEpRet |             195 |
+|          StdEpRet |            29.5 |
+|          MaxEpRet |             245 |
+|          MinEpRet |             150 |
+|             EpLen |        1.51e+03 |
+|      AverageVVals |          -0.138 |
+|          StdVVals |           0.202 |
+|          MaxVVals |           0.663 |
+|          MinVVals |          -0.738 |
+| TotalEnvInteracts |           2e+04 |
+|            LossPi |           0.362 |
+|             LossV |        1.15e+03 |
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+|       DeltaLossPi |          -0.777 |
+|        DeltaLossV |            -514 |
+|           Entropy |           0.919 |
+nu: [nan]
+|                KL |          0.0703 |
+|          ClipFrac |           0.615 |
+nu: [nan]
+lam: 1.5099500000000001
+-------------------------------------
+|          StopIter |              99 |
+lam: 1.5099500000000001
+|              Time |             276 |
+-------------------------------------
+---------------------------------------
+nu: [nan]
+-------------------------------------
+bad_trajectory_num: 2
+update num: 1
+lam: 1.5099500000000001
+-------------------------------------
+nu: [nan]
+lam: 1.5099500000000001
+-------------------------------------
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+---------------------------------------
+|             Epoch |               1 |
+|      AverageEpRet |             193 |
+|          StdEpRet |            48.5 |
+|          MaxEpRet |             274 |
+|          MinEpRet |             130 |
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+|             EpLen |        1.51e+03 |
+|      AverageVVals |            15.4 |
+nu: [nan]
+|          StdVVals |           0.867 |
+lam: [nan]
+|          MaxVVals |            16.3 |
+nu: [nan]
+lam: [nan]
+-------------------------------------
+-------------------------------------
+|          MinVVals |            10.9 |
+lam: [nan]
+-------------------------------------
+| TotalEnvInteracts |           4e+04 |
+|            LossPi |            0.33 |
+|             LossV |             829 |
+|       DeltaLossPi |          -0.741 |
+|        DeltaLossV |            -234 |
+|           Entropy |           0.918 |
+|                KL |           0.105 |
+|          ClipFrac |           0.656 |
+|          StopIter |              99 |
+|              Time |             541 |
+---------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+lam: [nan]
+-------------------------------------
+day: 1508, episode: 20
+begin_total_asset: 1000000.00
+end_total_asset: 2742446.66
+total_reward: 1742446.66
+total_cost: 75013.25
+total_trades: 79734
+Sharpe: 0.926
+=================================
+day: 1508, episode: 20
+begin_total_asset: 1000000.00
+end_total_asset: 2899313.58
+total_reward: 1899313.58
+total_cost: 102922.10
+total_trades: 82212
+Sharpe: 0.900
+=================================
+day: 1508, episode: 20
+begin_total_asset: 1000000.00
+end_total_asset: 3346796.91
+total_reward: 2346796.91
+total_cost: 68851.11
+total_trades: 80075
+Sharpe: 0.912
+=================================
+day: 1508, episode: 20
+begin_total_asset: 1000000.00
+end_total_asset: 2722830.10
+total_reward: 1722830.10
+total_cost: 94110.32
+total_trades: 79544
+Sharpe: 0.986
+=================================
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+-------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+---------------------------------------
+|             Epoch |               2 |
+|      AverageEpRet |             179 |
+|          StdEpRet |            37.8 |
+|          MaxEpRet |             245 |
+|          MinEpRet |             134 |
+|             EpLen |        1.51e+03 |
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+|      AverageVVals |            16.3 |
+|          StdVVals |            6.05 |
+|          MaxVVals |              21 |
+|          MinVVals |           -10.2 |
+| TotalEnvInteracts |           6e+04 |
+|            LossPi |           0.318 |
+|             LossV |             484 |
+|       DeltaLossPi |          -0.781 |
+|        DeltaLossV |            -272 |
+|           Entropy |           0.917 |
+|                KL |          0.0987 |
+nu: [nan]
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+nu: [nan]
+lam: [nan]
+-------------------------------------
+|          ClipFrac |           0.668 |
+|          StopIter |              99 |
+|              Time |             794 |
+---------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+lam: [nan]
+-------------------------------------
+nu: [nan]
+lam: [nan]
+-------------------------------------
+lam: [nan]
+-------------------------------------
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+---------------------------------------
+|             Epoch |               3 |
+|      AverageEpRet |             188 |
+|          StdEpRet |            40.7 |
+|          MaxEpRet |             262 |
+|          MinEpRet |             128 |
+|             EpLen |        1.51e+03 |
+|      AverageVVals |            18.4 |
+|          StdVVals |            9.04 |
+|          MaxVVals |            25.4 |
+|          MinVVals |           -21.6 |
+| TotalEnvInteracts |           8e+04 |
+|            LossPi |           0.314 |
+|             LossV |             348 |
+|       DeltaLossPi |          -0.762 |
+|        DeltaLossV |            -211 |
+|           Entropy |           0.916 |
+|                KL |           0.146 |
+|          ClipFrac |           0.668 |
+|          StopIter |              99 |
+|              Time |        1.04e+03 |
+-------------------------------------
+---------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+lam: [nan]
+-------------------------------------
+nu: [nan]
+lam: [nan]
+-------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+lam: [nan]
+-------------------------------------
+nu: [nan]
+lam: [nan]
+-------------------------------------
+day: 1508, episode: 30
+begin_total_asset: 1000000.00
+end_total_asset: 2429997.10
+total_reward: 1429997.10
+total_cost: 82757.21
+total_trades: 78887
+Sharpe: 0.929
+=================================
+day: 1508, episode: 30
+begin_total_asset: 1000000.00
+end_total_asset: 2875192.15
+total_reward: 1875192.15
+total_cost: 85716.00
+total_trades: 79464
+Sharpe: 0.803
+=================================
+day: 1508, episode: 30
+begin_total_asset: 1000000.00
+end_total_asset: 2691656.81
+total_reward: 1691656.81
+total_cost: 70841.66
+total_trades: 79206
+Sharpe: 0.777
+=================================
+day: 1508, episode: 30
+begin_total_asset: 1000000.00
+end_total_asset: 2407716.20
+total_reward: 1407716.20
+total_cost: 70851.55
+total_trades: 76623
+Sharpe: 0.897
+=================================
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+---------------------------------------
+|             Epoch |               4 |
+|      AverageEpRet |             180 |
+|          StdEpRet |            34.3 |
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+nu: [nan]
+|          MaxEpRet |             236 |
+|          MinEpRet |             118 |
+lam: [nan]
+|             EpLen |        1.51e+03 |
+|      AverageVVals |            16.3 |
+|          StdVVals |            15.1 |
+|          MaxVVals |            29.3 |
+nu: [nan]
+lam: [nan]
+-------------------------------------
+lam: [nan]
+-------------------------------------
+-------------------------------------
+|          MinVVals |           -28.6 |
+| TotalEnvInteracts |           1e+05 |
+|            LossPi |           0.286 |
+|             LossV |             273 |
+|       DeltaLossPi |          -0.762 |
+|        DeltaLossV |            -200 |
+|           Entropy |           0.916 |
+|                KL |           0.196 |
+|          ClipFrac |           0.682 |
+|          StopIter |              99 |
+|              Time |         1.3e+03 |
+---------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+lam: [nan]
+-------------------------------------
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+---------------------------------------
+|             Epoch |               5 |
+|      AverageEpRet |             181 |
+|          StdEpRet |            55.3 |
+|          MaxEpRet |             321 |
+|          MinEpRet |             109 |
+|             EpLen |        1.51e+03 |
+|      AverageVVals |            12.4 |
+-------------------------------------
+nu: [nan]
+lam: [nan]
+-------------------------------------
+nu: [nan]
+bad_trajectory_num: 0
+update num: 0
+lam: [nan]
+nu: [nan]
+lam: [nan]
+-------------------------------------
+|          StdVVals |            17.6 |
+|          MaxVVals |            31.5 |
+|          MinVVals |           -30.5 |
+| TotalEnvInteracts |         1.2e+05 |
+|            LossPi |           0.262 |
+|             LossV |             447 |
+-------------------------------------
+|       DeltaLossPi |          -0.706 |
+|        DeltaLossV |            -319 |
+|           Entropy |           0.915 |
+|                KL |           0.248 |
+|          ClipFrac |           0.682 |
+|          StopIter |              99 |
+|              Time |        1.56e+03 |
+---------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+lam: [nan]
+-------------------------------------
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+-------------------------------------
+---------------------------------------
+|             Epoch |               6 |
+|      AverageEpRet |             167 |
+|          StdEpRet |            22.8 |
+|          MaxEpRet |             198 |
+|          MinEpRet |             123 |
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+nu: [nan]
+|             EpLen |        1.51e+03 |
+|      AverageVVals |            16.7 |
+|          StdVVals |            14.4 |
+lam: [nan]
+-------------------------------------
+nu: [nan]
+lam: [nan]
+-------------------------------------
+|          MaxVVals |            34.3 |
+|          MinVVals |           -32.3 |
+| TotalEnvInteracts |         1.4e+05 |
+|            LossPi |           0.302 |
+|             LossV |             167 |
+|       DeltaLossPi |          -0.762 |
+|        DeltaLossV |            -144 |
+|           Entropy |           0.914 |
+|                KL |           0.213 |
+|          ClipFrac |           0.668 |
+|          StopIter |              99 |
+|              Time |        1.82e+03 |
+---------------------------------------
+lam: [nan]
+-------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+lam: [nan]
+-------------------------------------
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+-------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+---------------------------------------
+|             Epoch |               7 |
+|      AverageEpRet |             166 |
+|          StdEpRet |              40 |
+|          MaxEpRet |             246 |
+|          MinEpRet |             104 |
+|             EpLen |        1.51e+03 |
+|      AverageVVals |            17.6 |
+|          StdVVals |            14.8 |
+|          MaxVVals |            35.3 |
+bad_trajectory_num: 0
+update num: 0
+|          MinVVals |           -31.8 |
+| TotalEnvInteracts |         1.6e+05 |
+|            LossPi |           0.308 |
+|             LossV |             187 |
+|       DeltaLossPi |          -0.765 |
+|        DeltaLossV |            -152 |
+nu: [nan]
+|           Entropy |           0.913 |
+|                KL |           0.228 |
+|          ClipFrac |           0.651 |
+|          StopIter |              99 |
+|              Time |        2.08e+03 |
+nu: [nan]
+---------------------------------------
+lam: [nan]
+-------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+lam: [nan]
+-------------------------------------
+nu: [nan]
+lam: [nan]
+-------------------------------------
+lam: [nan]
+-------------------------------------
+day: 1508, episode: 60
+begin_total_asset: 1000000.00
+end_total_asset: 3175502.12
+total_reward: 2175502.12
+total_cost: 61115.67
+total_trades: 77024
+Sharpe: 1.144
+=================================
+day: 1508, episode: 60
+begin_total_asset: 1000000.00
+end_total_asset: 3148517.11
+total_reward: 2148517.11
+total_cost: 63047.76
+total_trades: 78903
+Sharpe: 1.000
+=================================
+day: 1508, episode: 60
+begin_total_asset: 1000000.00
+end_total_asset: 2621330.85
+total_reward: 1621330.85
+total_cost: 53641.74
+total_trades: 76536
+Sharpe: 1.057
+=================================
+day: 1508, episode: 60
+begin_total_asset: 1000000.00
+end_total_asset: 4014891.46
+total_reward: 3014891.46
+total_cost: 98696.09
+total_trades: 82393
+Sharpe: 1.393
+=================================
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+-------------------------------------
+---------------------------------------
+|             Epoch |               8 |
+|      AverageEpRet |             212 |
+|          StdEpRet |            53.3 |
+|          MaxEpRet |             299 |
+|          MinEpRet |             143 |
+|             EpLen |        1.51e+03 |
+|      AverageVVals |              19 |
+|          StdVVals |            16.4 |
+|          MaxVVals |            36.7 |
+|          MinVVals |           -34.8 |
+| TotalEnvInteracts |         1.8e+05 |
+|            LossPi |           0.287 |
+|             LossV |             369 |
+|       DeltaLossPi |          -0.712 |
+|        DeltaLossV |            -247 |
+|           Entropy |           0.913 |
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+|                KL |           0.273 |
+|          ClipFrac |           0.663 |
+|          StopIter |              99 |
+|              Time |        2.34e+03 |
+---------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+lam: [nan]
+-------------------------------------
+lam: [nan]
+-------------------------------------
+nu: [nan]
+bad_trajectory_num: 0
+lam: [nan]
+-------------------------------------
+update num: 0
+nu: [nan]
+lam: [nan]
+-------------------------------------
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+---------------------------------------
+|             Epoch |               9 |
+|      AverageEpRet |             164 |
+|          StdEpRet |            31.4 |
+|          MaxEpRet |             216 |
+|          MinEpRet |             114 |
+|             EpLen |        1.51e+03 |
+|      AverageVVals |            22.2 |
+|          StdVVals |            18.2 |
+|          MaxVVals |            40.6 |
+|          MinVVals |           -39.7 |
+| TotalEnvInteracts |           2e+05 |
+|            LossPi |           0.298 |
+|             LossV |             276 |
+|       DeltaLossPi |          -0.726 |
+|        DeltaLossV |            -250 |
+|           Entropy |           0.912 |
+|                KL |           0.285 |
+|          ClipFrac |           0.663 |
+|          StopIter |              99 |
+|              Time |        2.59e+03 |
+---------------------------------------
+-------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+lam: [nan]
+-------------------------------------
+nu: [nan]
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+lam: [nan]
+-------------------------------------
+lam: [nan]
+-------------------------------------
+nu: [nan]
+lam: [nan]
+-------------------------------------
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+---------------------------------------
+|             Epoch |              10 |
+|      AverageEpRet |             217 |
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+|          StdEpRet |            48.3 |
+|          MaxEpRet |             305 |
+|          MinEpRet |             134 |
+|             EpLen |        1.51e+03 |
+|      AverageVVals |            17.9 |
+|          StdVVals |              19 |
+|          MaxVVals |            41.6 |
+|          MinVVals |           -39.3 |
+| TotalEnvInteracts |         2.2e+05 |
+nu: [nan]
+|            LossPi |           0.254 |
+|             LossV |             405 |
+|       DeltaLossPi |          -0.699 |
+|        DeltaLossV |            -321 |
+|           Entropy |           0.911 |
+|                KL |           0.298 |
+|          ClipFrac |           0.671 |
+|          StopIter |              99 |
+|              Time |        3.02e+03 |
+---------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+lam: [nan]
+-------------------------------------
+nu: [nan]
+lam: [nan]
+-------------------------------------
+nu: [nan]
+lam: [nan]
+-------------------------------------
+lam: [nan]
+-------------------------------------
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+-------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+---------------------------------------
+|             Epoch |              11 |
+|      AverageEpRet |             198 |
+|          StdEpRet |            44.6 |
+|          MaxEpRet |             312 |
+|          MinEpRet |             139 |
+|             EpLen |        1.51e+03 |
+|      AverageVVals |            19.2 |
+|          StdVVals |            20.3 |
+|          MaxVVals |            44.5 |
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+|          MinVVals |           -43.8 |
+| TotalEnvInteracts |         2.4e+05 |
+|            LossPi |            0.29 |
+|             LossV |             262 |
+|       DeltaLossPi |          -0.716 |
+|        DeltaLossV |            -227 |
+|           Entropy |            0.91 |
+|                KL |           0.325 |
+|          ClipFrac |           0.651 |
+|          StopIter |              99 |
+nu: [nan]
+|              Time |        3.29e+03 |
+---------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+lam: [nan]
+-------------------------------------
+nu: [nan]
+lam: [nan]
+nu: [nan]
+-------------------------------------
+lam: [nan]
+lam: [nan]
+-------------------------------------
+-------------------------------------
+day: 1508, episode: 90
+begin_total_asset: 1000000.00
+end_total_asset: 2651386.32
+total_reward: 1651386.32
+total_cost: 54847.01
+total_trades: 79627
+Sharpe: 1.003
+=================================
+day: 1508, episode: 90
+begin_total_asset: 1000000.00
+end_total_asset: 3168206.41
+total_reward: 2168206.41
+total_cost: 63299.17
+total_trades: 80635
+Sharpe: 1.157
+=================================
+day: 1508, episode: 90
+begin_total_asset: 1000000.00
+end_total_asset: 3090162.78
+total_reward: 2090162.78
+total_cost: 77606.96
+total_trades: 80631
+Sharpe: 1.041
+=================================
+day: 1508, episode: 90
+begin_total_asset: 1000000.00
+end_total_asset: 2635253.88
+total_reward: 1635253.88
+total_cost: 32571.16
+total_trades: 73837
+Sharpe: 0.925
+=================================
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+---------------------------------------
+nu: [nan]
+|             Epoch |              12 |
+|      AverageEpRet |             201 |
+|          StdEpRet |            43.7 |
+|          MaxEpRet |             301 |
+|          MinEpRet |             135 |
+|             EpLen |        1.51e+03 |
+|      AverageVVals |            25.1 |
+|          StdVVals |            20.7 |
+|          MaxVVals |            46.2 |
+|          MinVVals |           -45.5 |
+nu: [nan]
+| TotalEnvInteracts |         2.6e+05 |
+|            LossPi |           0.284 |
+|             LossV |             357 |
+lam: [nan]
+-------------------------------------
+|       DeltaLossPi |          -0.688 |
+lam: [nan]
+|        DeltaLossV |            -253 |
+|           Entropy |            0.91 |
+|                KL |           0.297 |
+|          ClipFrac |           0.661 |
+|          StopIter |              99 |
+|              Time |        3.54e+03 |
+nu: [nan]
+---------------------------------------
+-------------------------------------
+lam: [nan]
+-------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+lam: [nan]
+-------------------------------------
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+lam: [nan]
+-------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+lam: [nan]
+-------------------------------------
+---------------------------------------
+|             Epoch |              13 |
+|      AverageEpRet |             211 |
+|          StdEpRet |              35 |
+|          MaxEpRet |             287 |
+|          MinEpRet |             157 |
+|             EpLen |        1.51e+03 |
+|      AverageVVals |            22.1 |
+|          StdVVals |            22.8 |
+|          MaxVVals |            48.9 |
+|          MinVVals |           -48.4 |
+| TotalEnvInteracts |         2.8e+05 |
+|            LossPi |            0.26 |
+|             LossV |             241 |
+|       DeltaLossPi |          -0.718 |
+|        DeltaLossV |            -220 |
+|           Entropy |           0.909 |
+|                KL |           0.341 |
+|          ClipFrac |           0.697 |
+|          StopIter |              99 |
+|              Time |        3.79e+03 |
+---------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+lam: [nan]
+-------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+lam: [nan]
+-------------------------------------
+day: 1508, episode: 100
+begin_total_asset: 1000000.00
+end_total_asset: 4310114.52
+total_reward: 3310114.52
+total_cost: 62717.34
+total_trades: 80328
+Sharpe: 1.198
+=================================
+day: 1508, episode: 100
+begin_total_asset: 1000000.00
+end_total_asset: 2534751.94
+total_reward: 1534751.94
+total_cost: 42589.93
+total_trades: 74111
+Sharpe: 0.996
+=================================
+day: 1508, episode: 100
+begin_total_asset: 1000000.00
+end_total_asset: 2957348.00
+total_reward: 1957348.00
+total_cost: 51887.44
+total_trades: 79170
+Sharpe: 1.042
+=================================
+day: 1508, episode: 100
+begin_total_asset: 1000000.00
+end_total_asset: 3392430.59
+total_reward: 2392430.59
+total_cost: 53543.59
+total_trades: 80377
+Sharpe: 1.197
+=================================
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+-------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+---------------------------------------
+|             Epoch |              14 |
+|      AverageEpRet |             221 |
+|          StdEpRet |            55.8 |
+|          MaxEpRet |             329 |
+|          MinEpRet |             148 |
+|             EpLen |        1.51e+03 |
+|      AverageVVals |            21.2 |
+|          StdVVals |            21.9 |
+|          MaxVVals |            50.1 |
+|          MinVVals |           -49.9 |
+| TotalEnvInteracts |           3e+05 |
+|            LossPi |           0.263 |
+|             LossV |             302 |
+|       DeltaLossPi |          -0.712 |
+|        DeltaLossV |            -263 |
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+|           Entropy |           0.908 |
+|                KL |           0.341 |
+|          ClipFrac |           0.683 |
+|          StopIter |              99 |
+|              Time |        4.04e+03 |
+---------------------------------------
+nu: [nan]
+bad_trajectory_num: 0
+update num: 0
+-------------------------------------
+lam: [nan]
+-------------------------------------
+bad_trajectory_num: 0
+nu: [nan]
+update num: 0
+nu: [nan]
+lam: [nan]
+-------------------------------------
+lam: [nan]
+-------------------------------------
+nu: [nan]
+lam: [nan]
+-------------------------------------
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+---------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+|             Epoch |              15 |
+|      AverageEpRet |             210 |
+|          StdEpRet |            38.9 |
+|          MaxEpRet |             292 |
+|          MinEpRet |             164 |
+|             EpLen |        1.51e+03 |
+|      AverageVVals |            23.4 |
+|          StdVVals |            21.1 |
+|          MaxVVals |            50.2 |
+|          MinVVals |           -50.7 |
+| TotalEnvInteracts |         3.2e+05 |
+|            LossPi |           0.303 |
+|             LossV |             279 |
+|       DeltaLossPi |          -0.735 |
+|        DeltaLossV |            -253 |
+|           Entropy |           0.907 |
+|                KL |           0.374 |
+|          ClipFrac |           0.686 |
+|          StopIter |              99 |
+|              Time |         4.3e+03 |
+---------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+lam: [nan]
+-------------------------------------
+lam: [nan]
+-------------------------------------
+nu: [nan]
+lam: [nan]
+-------------------------------------
+nu: [nan]
+lam: [nan]
+-------------------------------------
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+-------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+---------------------------------------
+update num: 0
+bad_trajectory_num: 0
+update num: 0
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+lam: [nan]
+-------------------------------------
+nu: [nan]
+lam: [nan]
+-------------------------------------
+|             Epoch |              16 |
+|      AverageEpRet |             227 |
+|          StdEpRet |            57.8 |
+|          MaxEpRet |             329 |
+|          MinEpRet |             119 |
+|             EpLen |        1.51e+03 |
+|      AverageVVals |              20 |
+|          StdVVals |              23 |
+|          MaxVVals |            52.4 |
+|          MinVVals |           -52.1 |
+| TotalEnvInteracts |         3.4e+05 |
+|            LossPi |           0.282 |
+|             LossV |             587 |
+|       DeltaLossPi |          -0.641 |
+|        DeltaLossV |            -416 |
+|           Entropy |           0.906 |
+|                KL |           0.279 |
+|          ClipFrac |           0.631 |
+|          StopIter |              99 |
+|              Time |        4.56e+03 |
+---------------------------------------
+nu: [nan]
+lam: [nan]
+-------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+lam: [nan]
+-------------------------------------
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+---------------------------------------
+|             Epoch |              17 |
+|      AverageEpRet |             273 |
+|          StdEpRet |            87.2 |
+|          MaxEpRet |             444 |
+|          MinEpRet |             146 |
+|             EpLen |        1.51e+03 |
+|      AverageVVals |            29.7 |
+|          StdVVals |            19.3 |
+nu: [nan]
+nu: [nan]
+|          MaxVVals |            56.7 |
+|          MinVVals |           -52.2 |
+| TotalEnvInteracts |         3.6e+05 |
+|            LossPi |           0.269 |
+lam: [nan]
+-------------------------------------
+lam: [nan]
+-------------------------------------
+lam: [nan]
+-------------------------------------
+|             LossV |             558 |
+|       DeltaLossPi |          -0.662 |
+|        DeltaLossV |            -409 |
+|           Entropy |           0.905 |
+|                KL |           0.308 |
+|          ClipFrac |           0.672 |
+|          StopIter |              99 |
+|              Time |        4.82e+03 |
+---------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+lam: [nan]
+-------------------------------------
+day: 1508, episode: 130
+begin_total_asset: 1000000.00
+end_total_asset: 3909958.74
+total_reward: 2909958.74
+total_cost: 56415.28
+total_trades: 81182
+Sharpe: 1.329
+=================================
+day: 1508, episode: 130
+begin_total_asset: 1000000.00
+end_total_asset: 2865299.74
+total_reward: 1865299.74
+total_cost: 62968.47
+total_trades: 79370
+Sharpe: 1.098
+=================================
+day: 1508, episode: 130
+begin_total_asset: 1000000.00
+end_total_asset: 3722335.36
+total_reward: 2722335.36
+total_cost: 47627.46
+total_trades: 74435
+Sharpe: 1.367
+=================================
+day: 1508, episode: 130
+begin_total_asset: 1000000.00
+end_total_asset: 2661848.34
+total_reward: 1661848.34
+total_cost: 38532.53
+total_trades: 74825
+Sharpe: 1.001
+=================================
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+-------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+---------------------------------------
+|             Epoch |              18 |
+|      AverageEpRet |             224 |
+|          StdEpRet |            43.5 |
+|          MaxEpRet |             292 |
+|          MinEpRet |             165 |
+nu: [nan]
+lam: [nan]
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+lam: [nan]
+|             EpLen |        1.51e+03 |
+|      AverageVVals |            20.7 |
+|          StdVVals |            29.8 |
+|          MaxVVals |            61.4 |
+|          MinVVals |             -62 |
+| TotalEnvInteracts |         3.8e+05 |
+|            LossPi |           0.254 |
+|             LossV |             304 |
+|       DeltaLossPi |          -0.698 |
+|        DeltaLossV |            -290 |
+|           Entropy |           0.904 |
+|                KL |           0.368 |
+|          ClipFrac |            0.67 |
+|          StopIter |              99 |
+|              Time |        5.08e+03 |
+---------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+-------------------------------------
+nu: [nan]
+nu: [nan]
+lam: [nan]
+-------------------------------------
+lam: [nan]
+-------------------------------------
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+Warning: trajectory cut off by epoch at 473 steps.
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+---------------------------------------
+|             Epoch |              19 |
+|      AverageEpRet |             243 |
+|          StdEpRet |            59.2 |
+|          MaxEpRet |             358 |
+|          MinEpRet |             166 |
+|             EpLen |        1.51e+03 |
+|      AverageVVals |            26.5 |
+|          StdVVals |            27.7 |
+|          MaxVVals |              62 |
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+|          MinVVals |           -62.2 |
+| TotalEnvInteracts |           4e+05 |
+|            LossPi |           0.293 |
+|             LossV |             403 |
+nu: [nan]
+|       DeltaLossPi |          -0.727 |
+nu: [nan]
+|        DeltaLossV |            -368 |
+lam: [nan]
+|           Entropy |           0.903 |
+lam: [nan]
+-------------------------------------
+-------------------------------------
+|                KL |           0.382 |
+|          ClipFrac |           0.685 |
+|          StopIter |              99 |
+|              Time |        5.67e+03 |
+---------------------------------------
+nu: [nan]
+lam: [nan]
+-------------------------------------
+-------------------------------------
+bad_trajectory_num: 0
+update num: 0
+nu: [nan]
+lam: [nan]
+-------------------------------------
+Training finished and saved in trained_models/agent_cppo_llama_20_epochs_20k_steps.pth
+Training finished and saved in trained_models/agent_cppo_llama_20_epochs_20k_steps.pth
+Training finished and saved in trained_models/agent_cppo_llama_20_epochs_20k_steps.pth
+Training finished and saved in trained_models/agent_cppo_llama_20_epochs_20k_steps.pth
