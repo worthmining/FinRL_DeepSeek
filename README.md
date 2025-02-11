@@ -1,6 +1,8 @@
 # FinRL-DeepSeek: LLM-Infused Risk-Sensitive Reinforcement Learning for Trading Agents
 [![](https://dcbadge.limes.pink/api/server/ekrySuRBf4)](https://discord.gg/ekrySuRBf4)
 
+Blog: https://melwy.com/finrl_deepseek
+
 Paper: 
 
 Installation script: `installation_script.sh`
