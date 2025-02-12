@@ -3,7 +3,7 @@
 
 Blog: https://melwy.com/finrl_deepseek
 
-Paper: 
+Paper: https://arxiv.org/abs/2502.07393
 
 Installation script: `installation_script.sh`
 
