@@ -5,6 +5,8 @@ Blog: https://melwy.com/finrl_deepseek
 
 Paper: https://arxiv.org/abs/2502.07393
 
+Update: The project is integrated to the original FinRL project by [AI4Finance](https://github.com/AI4Finance-Foundation/FinRL_DeepSeek)!
+
 Installation script: `installation_script.sh`
 
 Data: https://huggingface.co/datasets/benstaf/nasdaq_2013_2023/tree/main
