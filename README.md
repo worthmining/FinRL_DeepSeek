@@ -3,11 +3,6 @@
 
 [![](https://dcbadge.vercel.app/api/server/trsr8SXpW5)](https://discord.gg/trsr8SXpW5)
 
-[![](https://dcbadge.limes.pink/api/server/ekrySuRBf4)](https://discord.gg/ekrySuRBf4)
-
-Blog: https://melwy.com/finrl_deepseek
-
-Paper: https://arxiv.org/abs/2502.07393
 
 Update1: The project is integrated to the original FinRL project by [AI4Finance](https://github.com/AI4Finance-Foundation/FinRL_DeepSeek)!
 
